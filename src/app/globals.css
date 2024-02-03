@@ -65,6 +65,19 @@
     --ring: 212.7 26.8% 83.9%;
   }
 }
+
+html {
+  @apply h-full;
+}
+body {
+  @apply h-full;
+}
+div#__next {
+  @apply h-full;
+}
+main {
+  @apply h-full;
+}
  
 @layer base {
   * {

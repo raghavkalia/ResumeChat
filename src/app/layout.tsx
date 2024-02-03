@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ChatPDF YT",
+  title: "ResumeChat",
 };
 
 export default function RootLayout({
@@ -19,9 +19,11 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <Providers>
-        <html lang="en">
-          <body className={inter.className}>{children}</body>
-          <Toaster />
+        <html lang="en" style={{overflow: "auto"}}>
+          <body className={inter.className} style={{overflow: "auto"}}>
+            {children}
+            <Toaster />
+          </body>
         </html>
       </Providers>
     </ClerkProvider>
